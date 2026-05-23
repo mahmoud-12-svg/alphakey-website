@@ -6,130 +6,13 @@
 <title>AlphaKey Locksmith – Choose Your Location</title>
 <link rel="icon" href="fiv image.png" type="image/png">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --gold: #D4A017;
-    --gold-light: #F0C040;
-    --black: #0A0A0A;
-    --dark: #111111;
-    --dark2: #1A1A1A;
-    --gray: #2A2A2A;
-    --text: #E8E8E8;
-    --muted: #888;
-    --white: #FFFFFF;
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    font-family: 'Barlow', sans-serif;
-    background: var(--black);
-    color: var(--text);
-    overflow-x: hidden;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .location-selector {
-    text-align: center;
-    max-width: 600px;
-    padding: 60px;
-  }
-
-  .logo {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 36px;
-    letter-spacing: 3px;
-    color: var(--white);
-    margin-bottom: 40px;
-  }
-  .logo-img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    display: block;
-  }
-  .logo span { color: var(--gold); }
-
-  h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(48px, 6vw, 80px);
-    line-height: 0.92;
-    letter-spacing: 2px;
-    color: var(--white);
-    margin-bottom: 20px;
-  }
-  h1 .accent { color: var(--gold); display: block; }
-
-  .subtitle {
-    font-size: 18px;
-    color: var(--muted);
-    margin-bottom: 60px;
-    line-height: 1.6;
-  }
-
-  .location-options {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-bottom: 40px;
-  }
-
-  .location-card {
-    background: var(--dark2);
-    padding: 40px 30px;
-    border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.05);
-    transition: all 0.3s;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-  }
-  .location-card:hover {
-    border-color: var(--gold);
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(212,160,23,0.1);
-  }
-
-  .location-name {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--white);
-    margin-bottom: 15px;
-  }
-
-  .location-desc {
-    font-size: 14px;
-    color: var(--muted);
-    line-height: 1.6;
-  }
-
-  .emergency-note {
-    font-size: 14px;
-    color: var(--gold);
-    margin-top: 30px;
-  }
-
-  @media (max-width: 768px) {
-    .location-options {
-      grid-template-columns: 1fr;
-    }
-    .location-selector {
-      padding: 40px 20px;
-    }
-  }
-</style>
-  <!-- Google tag (gtag.js) -->
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="Choose your location for AlphaKey Locksmith's 24/7 locksmith services in Tampa or Palm Beach.">
+<meta property="og:title" content="AlphaKey Locksmith – Choose Your Location">
+<meta property="og:description" content="Select Tampa or Palm Beach to get the right locksmith contact and service area information.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="fiv image.png">
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8524J1JNLZ">
 </script>
 <script>
@@ -153,11 +36,11 @@
     <p class="subtitle">Choose your area to get the right locksmith services and contact information for your location.</p>
 
     <div class="location-options">
-      <a href="/tampa/" class="location-card">
+      <a href="tampa.html" class="location-card">
         <div class="location-name">Tampa</div>
         <div class="location-desc">Serving Tampa and surrounding areas with 24/7 emergency locksmith services.</div>
       </a>
-      <a href="/palm-beach/" class="location-card">
+      <a href="palmbeach.html" class="location-card">
         <div class="location-name">Palm Beach</div>
         <div class="location-desc">Professional locksmith services for Palm Beach County and nearby communities.</div>
       </a>
@@ -167,5 +50,6 @@
       🚨 Emergency? Call the appropriate number for your location above
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
