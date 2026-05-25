@@ -1,25 +1,19 @@
-// Scroll reveal
-document.documentElement.classList.add('js');
+document.addEventListener("DOMContentLoaded", function () {
+  const revealElements = document.querySelectorAll(".reveal");
 
-if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((e, i) => {
-      if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add('visible'), i * 80);
-        observer.unobserve(e.target);
+  const revealOnScroll = function () {
+    const windowHeight = window.innerHeight;
+
+    revealElements.forEach(function (element) {
+      const elementTop = element.getBoundingClientRect().top;
+
+      if (elementTop < windowHeight - 80) {
+        element.classList.add("active");
       }
     });
-  }, { threshold: 0.1 });
+  };
 
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-} else {
-  document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
-}
+  revealOnScroll();
 
-// Smooth nav links
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const target = document.querySelector(a.getAttribute('href'));
-    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
-  });
+  window.addEventListener("scroll", revealOnScroll);
 });
