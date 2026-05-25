@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const revealElements = document.querySelectorAll(".reveal");
 
-  const revealOnScroll = function () {
+  function revealOnScroll() {
     const windowHeight = window.innerHeight;
 
     revealElements.forEach(function (element) {
@@ -11,9 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
         element.classList.add("active");
       }
     });
-  };
+  }
 
   revealOnScroll();
-
   window.addEventListener("scroll", revealOnScroll);
 });
