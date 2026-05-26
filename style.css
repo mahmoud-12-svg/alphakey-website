@@ -117,11 +117,14 @@ nav {
   justify-content: center;
   background: var(--gold);
   color: #080808;
-  font-weight: 800;
-  border-radius: 999px;
-  padding: 13px 22px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 12px 24px;
   transition: 0.25s;
-  box-shadow: 0 12px 35px rgba(212, 160, 23, 0.25);
+  box-shadow: 0 4px 15px rgba(212, 160, 23, 0.3);
 }
 
 .nav-cta:hover,
