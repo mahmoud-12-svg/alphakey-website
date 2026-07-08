@@ -49,6 +49,7 @@ img {
   display: block;
   object-fit: contain;
   border-radius: 0;
+  mix-blend-mode: screen;
 }
 
 .logo img {
