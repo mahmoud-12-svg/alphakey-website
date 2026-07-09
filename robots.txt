@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alpha-keys.com/sitemap.xml
