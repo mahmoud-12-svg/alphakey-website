@@ -894,3 +894,11 @@ nav.nav-shrink .nav-cta {
 }
 
 }
+
+/* Ultra-narrow phones (<=340px): keep long city names such as
+   "Indianapolis" from clipping in the hero headline. */
+@media (max-width: 340px) {
+  .hero h1 {
+    font-size: 60px;
+  }
+}
