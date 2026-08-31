@@ -902,3 +902,15 @@ nav.nav-shrink .nav-cta {
     font-size: 60px;
   }
 }
+
+/* Legal operating-entity notice */
+.footer-legal {
+  padding-top: 18px;
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-legal strong {
+  color: var(--white);
+}
